@@ -17,7 +17,7 @@ gulp.task('optimize-images', () => {
 })
 
 gulp.task('deploy', () => {
-  fs.writeFile('./public/CNAME', 'bitswipe-stack.github.io', function (err) {
+  fs.writeFile('./public/CNAME', 'bitswipe-stack.github.io/bitswipe.com', function (err) {
     if (err) return console.log(err)
   })
   return gulp.src('./public/**/*')
