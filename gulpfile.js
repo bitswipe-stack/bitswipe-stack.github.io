@@ -17,11 +17,8 @@ gulp.task('optimize-images', () => {
 })
 
 gulp.task('deploy', () => {
-  fs.writeFile('./public/CNAME', 'bitswipe.npmstack.com', function (err) {
-    if (err) return console.log(err)
-  })
   return gulp.src('./public/**/*')
-    .pipe($.ghPages({branch: 'master'}))
+    .pipe($.ghPages())
 })
 
 gulp.task('clear-cache', () => $.cache.clearAll())
