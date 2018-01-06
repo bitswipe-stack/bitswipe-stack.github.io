@@ -17,8 +17,11 @@ gulp.task('optimize-images', () => {
 })
 
 gulp.task('deploy', () => {
+  fs.writeFile('./public/CNAME', 'bitswipe-stack.github.io', function (err) {
+    if (err) return console.log(err)
+  })
   return gulp.src('./public/**/*')
-    .pipe($.ghPages())
+    .pipe($.ghPages({branch: 'source'}))
 })
 
 gulp.task('clear-cache', () => $.cache.clearAll())

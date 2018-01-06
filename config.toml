@@ -1,7 +1,5 @@
 # Page settings
-baseurl = "/"
-canonifyURLs = false
-rssLink = ""
+baseurl = "https://bitswipe-stack.github.io"
 title = "BitSwipe"
 languageCode = "en-us"
 
