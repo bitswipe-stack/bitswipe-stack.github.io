@@ -1,11 +1,11 @@
 # Page settings
-baseurl = "https://bitswipe-stack.github.io/"
+baseurl = "http://localhost:1313"
 title = "BitSwipe"
 languageCode = "en-us"
 
 [params]
   # Meta
-  author = "sethbergman.com"
+  author = ""
   description = "Dedicated to the study and implementation of blockchain technology."
   email = ""
 

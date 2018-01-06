@@ -9,7 +9,7 @@ script:
   - .bin/hugo -d public/
 # Deploy to GitHub pages
 deploy:
-  provider: pages
+  provider: gh-pages
   skip_cleanup: true
   local_dir: public
   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
