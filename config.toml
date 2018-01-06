@@ -1,5 +1,5 @@
 # Page settings
-baseurl = "http://localhost:1313"
+baseurl = "https://bitswipe-stack.github.io"
 title = "BitSwipe"
 languageCode = "en-us"
 
